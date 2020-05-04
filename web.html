@@ -2,17 +2,17 @@
 <head>
 <title>My page</title>
 </head>
-<body style="background-color: black;">
-<h1 title="Hej", style="color: green; font-family:verdana; font-size: 40px; text-align: center; border:2px solid green ;">
+<body>
+<h1 id="title" title="Hej", style="color: green; font-family:verdana; font-size: 40px; text-align: center; border:2px solid green ;">
     Max hemsida!!
 </h1>
-<p style ="color:green" title="dö">This is a paragraph</p>
+<p id="1" style ="color:green" title="dö">This is a paragraph</p>
 <p style="color: green;">En paragraf med en länk <br>
 <a style="color: green;" href= "https://www.youtube.com/results?search_query=html+commands">En youtube länk
 </a> <br>
 </p>
 <p>
-<button>Klicka!</button>
+<button onclick='document.getElementById("title").innerHTML = "Nu ändrades den!"' = ">Klicka!</button>
 </p>
 
 <p style="color: green;">
@@ -33,6 +33,11 @@
     </ul>
 
 <p style="color: green;">Tjenare</p>
+
+<script>
+    document.write("Javascript");
+</script>
+
 </body>
 
 </html>
